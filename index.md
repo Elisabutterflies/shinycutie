@@ -1,4 +1,6 @@
 ---
-title: Welcome to my blog
+title: Welcome to my website
+author: elisabutterflies
+description: It is still under construction.
 ---
 
