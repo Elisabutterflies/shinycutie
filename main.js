@@ -38,3 +38,41 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
   applyTheme(newTheme);
 });
+
+
+function updateClock() {
+            let now = new Date();
+            let hours = String(now.getHours()).padStart(2, '0');
+            let minutes = String(now.getMinutes()).padStart(2, '0');
+            let seconds = String(now.getSeconds()).padStart(2, '0');
+
+            let timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById("clock").textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Run immediately on load
+        		
+
+
+function generateTinyCalendar() {
+            const today = new Date();
+            const currentMonth = today.getMonth();
+            const currentYear = today.getFullYear();
+
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+            let calendarHTML = `<h3>${monthNames[currentMonth]} ${currentYear}</h3>`;
+            calendarHTML += '<div class="days">';
+
+            for (let day = 1; day <= daysInMonth; day++) {
+                const isToday = (day === today.getDate()) ? "today" : "";
+                calendarHTML += `<div class="day ${isToday}">${day}</div>`;
+            }
+
+            calendarHTML += '</div>';
+            document.getElementById("calendar").innerHTML = calendarHTML;
+        }
+
+        generateTinyCalendar();
