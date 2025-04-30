@@ -94,6 +94,9 @@ font-size:18px;
   overflow-y:scroll;
   font-family: 'fonts', sans-serif;
 }
+.insidebox1 li{
+  list-style:url('https://64.media.tumblr.com/175256a3a8044cc5a26fe3d5db3402d4/tumblr_inline_p7j3hlaf9d1rhwzwl_75sq.gifv');
+}
 .insidebox2 {
   background-color: var(--background-color);
   outline:var(--outline-two);
