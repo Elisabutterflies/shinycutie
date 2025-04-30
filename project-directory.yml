@@ -1,7 +1,4 @@
 shinycutie/
 │
 ├── index.html
-├── ruffle/
-│   ├── ruffle.js
-│   └── ruffle.wasm
 ├── LandOfBunnies.swf
