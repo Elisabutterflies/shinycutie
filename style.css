@@ -9,11 +9,11 @@
 }
 
 [data-theme="dark"] {
-  --background-color: #d859a5;
+  --background-color: black;
   --background-color-two:#f3c5da;
   --text-color: #f3c5da;
-  --border-color: 4px #d859a5;
-  --outline-one: double #d859a5;
+  --border-color: 4px black;
+  --outline-one: double black;
   --outline-two:double #f3c5da;
   --bg-image:url('https://files.catbox.moe/141ess.jpg');
 }
