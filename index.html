@@ -1,1 +1,179 @@
-
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shinycutie</title>
+    <meta content="" name="description" />
+    <link rel="icon" type="image/jpg" href="" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+    <div id="container"><div id="flex">
+      <header>
+        <a href="#content" id="skip-to-content-link">Skip to content</a>
+<div class="header-image">
+  <img src="https://files.catbox.moe/qmwd2w.gif" alt="">
+        </div>
+        <div class="headerone"><h1>Welcome!</h1></div>
+        </div>
+        </header>
+        <main id="content">
+      <div class="mainbox">
+        <nav>
+          <h1>Hello!</h1>
+      <div class="pfp">
+        <img src="https://files.catbox.moe/bksccl.png" alt="fairy cat">
+      </div>
+        <div class="tab">
+        <button class="tablinks" id="theme-toggle">Theme</button>
+        <button class="tablinks" onclick="openCity(event, 'First')" id="defaultOpen">About</button>
+        <button class="tablinks" onclick="openCity(event, 'Second')">Guestbook</button>
+        <button class="tablinks" onclick="openCity(event, 'Third')">Links</button>
+        <button class="tablinks" onclick="openCity(event, 'Fourth')">Resources</button>
+        <button class="tablinks" onclick="openCity(event, 'Fifth')">Writing</button>
+        <button class="tablinks" onclick="openCity(event, 'Sixth')">Game</button>
+        </ul>
+        </nav>
+        <div class="middlebox">
+          <div id="First" class="tabcontent">
+          </div>
+            <div id="Second" class="tabcontent">
+              <h1>Guest Book</h1>
+          <h2>Sign the guestbook</h2>
+    <!-- Guest Book Form -->
+    <form id="guestbook-form">
+            <input type="text" id="name" placeholder="Your Name" required><br><br>
+            <input type="text" id="website" placeholder="Website (optional)"><br><br>
+            <textarea id="message" placeholder="Say something nice" required></textarea><br><br>
+            <button type="submit">Sign Guestbook</button>
+        </form>
+            <div class="pagination">
+            <button id="prev" disabled>Previous</button>
+            <button id="next">Next</button>
+        </div>
+              <div id="guestbook-entries"></div>
+    </div>
+    <script src="/rssfeed/guestbook.js"></script>
+          </div>
+              <div id="Third" class="tabcontent">
+          </div>
+<div id="Fourth" class="tabcontent">
+<div id="updates"><h1>Resources</h1>
+</div>
+    
+    <li><a href="https://arkmsworld.neocities.org/webby">arkmsworld.neocities.org</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.cbox.ws/index">cbox.ws</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://cinni.net/">cinni.net</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.colorhexa.com/">colorhexa.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://csslayout.io/">csslayout.io</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.cursors-4u.com/cute/?skip=741">cursors-4u.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.dafont.com/">DaFont</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://eggramen.neocities.org/code/css_testpages">eggramen.neocities.org</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://loading.io/animation/text/#">loading.io</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://loveberry.nekoweb.org/">loveberry.nekoweb.org</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://petrapixel.neocities.org/coding/layout-generator">petrapixel.neocities.org</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://pixel-soup.tumblr.com/">pixel-soup.tumblr.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://pixel-utopia.tumblr.com/page/7">pixel-utopia.tumblr.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://sadgrl.online/">sadgrl.online</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://sadgrlonline.github.io/html-cheatsheet/">sadgrlonline html-cheatsheet</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.scmplayer.net/#skin=https://static.tumblr.com/ab5t6n9/xvrn5ivgg/hellokitty2.css">scmplayer.net</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://seamless-patterns.tumblr.com/page/2">seamless-patterns.tumblr.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://teddybear-halo.neocities.org/links#resources">teddybear-halo.neocities</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://codesharing.neocities.org/directory/layouts">tentacool's directory</a></li>
+   <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://gifcities.org/?q=wizard">Gifcities</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.glitter-graphics.com/gallery.php?categoryID=65&page=2">glitter-graphics.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://photomosh.com/">photomosh.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.transparenttextures.com/">transparenttextures.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://tenshiikisu.tumblr.com/post/79015021080/heres-my-collection-of-pixel-backgrounds-tile">tenshiikisu.tumblr.com</a></li>
+     <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+    
+    <li><a href="https://www.w3schools.com/howto/default.asp">w3schools.com</a></li>
+    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
+          </div>
+          <div id="Fifth" class="tabcontent">
+          </div>
+          <div id="Sixth" class="tabcontent">
+            <div class="videogame">
+        				<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        		<div id="flashcontainer">
+    <embed id="flash-game" src="/LandOfBunnies.swf" width="520" height="450">
+</div>
+RuffleFlashplayer is required
+            </div>
+          </div>
+          <div class="insidebox2">
+            <div class="tiny-calendar" id="calendar"></div>
+            <div class="clock" id="clock">00:00:00</div>
+            <div class="list">
+<div id="updates"><h1>Updates</h1>
+</div>
+              <ul>
+                <li>Added bgs</li>
+                <li>Added header</li>
+                <li>Added pfp</li>
+                <li>Added clock</li>
+                <li>Added buttons</li>
+                <li>Added poll</li>
+            </div>
+              <div id="polls">
+              <form method="post" action="https://poll.pollcode.com/36571618"><div style="background-color:#FFDBF4;padding:2px;height:140px;width:196px;font-family:Comic Sans MS;font-size:small;color:#AB2772;"><div style="padding:2px 0px 4px 2px;"><strong>Which kawaii character do you like?</strong></div><div align="center" style="padding-bottom:5px;"><select name="answer"><option value="1">Pusheen</option><option value="2">Hello Kitty</option><option value="3">Cinnamoroll</option><option value="4">My Melody</option><option value="5">Kuromi</option><option value="6">Chococat</option><option value="7">Little Twin Stars</option><option value="8">Snoopy</option></select></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote "> <input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px;">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+              </div>
+            </div>
+      </div>
+          </main>
+        <footer>meow</footer>
+      </div>
+            </div>
+              <script src="/main.js"></script>
+  </body>
+</html>
