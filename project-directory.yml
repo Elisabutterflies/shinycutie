@@ -4,4 +4,4 @@ your-site/
 ├── ruffle/
 │   ├── ruffle.js
 │   └── ruffle.wasm
-│   └── LandOfBunnies.swf
+├── LandOfBunnies.swf
