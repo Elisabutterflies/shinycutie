@@ -158,10 +158,11 @@
           </div>
           <div id="Sixth" class="tabcontent">
             <div class="videogame">
-        				<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        				<script src="ruffle-nightly-2025_04_30-web-selfhosted/ruffle"></script>
         		<div id="flashcontainer">
     <embed id="flash-game" src="https://github.com/Elisabutterflies/shinycutie/blob/main/LandOfBunnies.swf" width="520" height="450">
 </div>
+                
 RuffleFlashplayer is required
             </div>
           </div>
@@ -280,5 +281,16 @@ if (defaultTab) {
   
           generateTinyCalendar();
               </script>
+        <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const container = document.getElementById("flash-container");
+      const player = ruffle.createPlayer();
+      container.innerHTML = '';
+      container.appendChild(player);
+      player.load("game/LandOfBunnies.swf");
+    });
+  </script>
   </body>
 </html>
