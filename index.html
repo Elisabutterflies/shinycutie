@@ -160,7 +160,7 @@
             <div class="videogame">
         				<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
         		<div id="flashcontainer">
-    <embed id="flash-game" src="/LandOfBunnies.swf" width="520" height="450">
+    <embed id="flash-game" src="game/LandOfBunnies.swf" width="520" height="450">
 </div>
                 
 RuffleFlashplayer is required
@@ -289,7 +289,7 @@ if (defaultTab) {
     const player = ruffle.createPlayer();
     container.innerHTML = '';
     container.appendChild(player);
-    player.load("/LandOfBunnies.swf");
+    player.load("game/LandOfBunnies.swf");
   });
 </script>
   </body>
