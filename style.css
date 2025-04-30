@@ -68,6 +68,13 @@ font-size:18px;
    line-height:30px;
    letter-spacing:2px;
  }
+.mainbox a{
+  color: var(--text-color);
+  text-decoration:none;
+}
+.mainbox a:hover{
+  text-decoration:underline;
+}
  .middlebox{
    outline:var(--outline-two);
    width:940px;
@@ -116,7 +123,7 @@ font-size:18px;
 }
 .videogame{
   position:absolute;
-  margin-left:70px;
+  margin-left:50px;
   margin-top:120px;
 }
 #polls{
