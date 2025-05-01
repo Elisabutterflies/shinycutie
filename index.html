@@ -1,51 +1,192 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+
+    <!-- Change your site title: (It is shown in the tab) -->
     <title>shinycutie</title>
-    <meta content="" name="description" />
-    <link rel="icon" type="image/jpg" href="" media="all">
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    <body>
-    <div id="container"><div id="flex">
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="My personal website!" name="description" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS: -->
+    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
+    <link href="./style.css" rel="stylesheet" />
+    
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%c Template generated with petrapixel's layout generator.", "font-size: 14pt;");
+      console.log("%c https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt;");
+    </script>
+  </head>
+  <body>
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+  
+      <!-- =============================================== -->
+      <!-- HEADER -->
+      <!-- =============================================== -->
+
       <header>
-        <a href="#content" id="skip-to-content-link">Skip to content</a>
 <div class="header-image">
-  <img src="https://files.catbox.moe/qmwd2w.gif" alt="">
+          <img src="https://files.catbox.moe/g7codi.gif" alt="" />
         </div>
-        <div class="headerone"><h1>Welcome!</h1></div>
+        <div class="header-content">
+	        <div class="header-title">Website Title</div>
+	        
+        	
         </div>
-        </header>
-        <main id="content">
-      <div class="mainbox">
+      </header>
+
+	  
+        
+      <!-- =============================================== -->
+      <!-- LEFT SIDEBAR -->
+      <!-- =============================================== -->
+
+      <aside class="left-sidebar">
+	  
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <div class="tiny-calendar" id="calendar"></div>
+            <div class="clock" id="clock">00:00:00</div>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <blockquote>
+            <p> </p>
+          </blockquote>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <ul>
+            <li>List</li>
+            <li>List</li>
+            <li><a href="/">List</a></li>
+            <li>List</li>
+          </ul>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <form method="post" action="https://poll.pollcode.com/54663233"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Comic Sans MS;font-size:medium;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>Which kawaii character do you like?</strong></div><div align="center" style="padding-bottom:5px;"><select name="answer"><option value="1">Pusheen</option><option value="2">Hello Kitty</option><option value="3">Cinnamoroll</option><option value="4">My Melody</option><option value="5">Kuromi</option><option value="6">Chococat</option><option value="7">Little Twin Stars</option><option value="8">Snoopy</option></select></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote "> <input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px;">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <img class="full-width-image" src="">
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <div class="site-button">
+          	
+          </div>
+        </div>
+      </aside>
+	
+	  
+      <!-- =============================================== -->
+      <!-- RIGHT SIDEBAR -->
+      <!-- =============================================== -->
+
+      <aside class="right-sidebar">
+	  
+        
+        <!-- NAVIGATION -->
         <nav>
-          <h1>Hello!</h1>
-      <div class="pfp">
-        <img src="https://files.catbox.moe/bksccl.png" alt="fairy cat">
-      </div>
-        <div class="tab">
+          <div class="sidebar-title">Navigation</div>
+          <ul>
+            <div class="tab">
         <button class="tablinks" id="theme-toggle">Theme</button>
         <button class="tablinks" onclick="openCity(event, 'First')" id="defaultOpen">About</button>
         <button class="tablinks" onclick="openCity(event, 'Second')">Guestbook</button>
         <button class="tablinks" onclick="openCity(event, 'Third')">Links</button>
         <button class="tablinks" onclick="openCity(event, 'Fourth')">Resources</button>
-        <button class="tablinks" onclick="window.location.href='https://chamomile-tea.nekoweb.org/page/page2';">Writing</button>
+        <button class="tablinks" onclick="openCity(event, 'Fifth')">Writing</button>
         <button class="tablinks" onclick="openCity(event, 'Sixth')">Game</button>
-        </ul>
+              </ul>
+        	<details>
+            <summary><strong>Submenu</strong></summary>
+                <ul>
+                  <li><a href="/page-a">Page A</a></li>
+                  <li><a href="/page-b">Page B</a></li>
+                  <li><a href="/page-c">Page C</a></li>
+                  <li><a href="/page-d">Page D</a></li>
+                  <li><a href="/page-e">Page E</a></li>
+                </ul>
+                </details>
+                
+            </l>
+          </ul>
         </nav>
-        <div class="middlebox">
-          <div id="First" class="tabcontent">
-              <h1>About</h1>
-              <p>Hello! Welcome to shinycutie!</p>
-              <p>Age: 20s</p>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Hello!</div>
+          <div class="pfp">
+        <img src="https://files.catbox.moe/bksccl.png" alt="fairy cat">
+      </div>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <ul>
+            <li>List</li>
+            <li>List</li>
+            <li><a href="/">List</a></li>
+            <li>List</li>
+          </ul>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <img class="full-width-image" src="">
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title">Section Title</div>
+          <div class="site-button">
+          	
+          </div>
+        </div>
+      </aside>
+      
+  
+      <main id="content"> <!-- Do NOT remove the ID here -->
 
-<p>Pronouns: any is fine.</p>
+        
 
-<p>I made this website for fun, and because I love the color pink. I like to write, draw, code, play video games, and crochet. I started coding back in May, 2023 and been having fun with it ever since. I have a neocities website called tinymagicalcat, and a nekoweb one called chamomile-tea. I'm currently writing a novel and working on my crochet projects. One of my crochet projects was a corset, which could've turned out better, but I'm okay with it. Additionally, the video game I've been playing lately is Rune Factory 4 on the 3ds, but I also love Tomodachi Life and Bayonetta.
-</p>
-              
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+        <div id="First" class="tabcontent">
+            <section>
+          <h1>About</h1>
+          <p>Hello</p>
+        </section>
           </div>
             <div id="Second" class="tabcontent">
               <h1>Guest Book</h1>
@@ -66,219 +207,34 @@
     <script src="/rssfeed/guestbook.js"></script>
           </div>
               <div id="Third" class="tabcontent">
-                  <ul>
-                      <li><a href="https://tinymagicalcat.neocities.org/">tinymagicalcat.neocities.org</a></li>
-                      <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-                      <li><a href="https://chamomile-tea.nekoweb.org/">chamomile-tea.nekoweb.org</a></li>
-                  </ul>
           </div>
 <div id="Fourth" class="tabcontent">
-<div id="updates"><h1>Resources</h1>
-</div>
-    
-    <li><a href="https://arkmsworld.neocities.org/webby">arkmsworld.neocities.org</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.cbox.ws/index">cbox.ws</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://cinni.net/">cinni.net</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.colorhexa.com/">colorhexa.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://csslayout.io/">csslayout.io</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.cursors-4u.com/cute/?skip=741">cursors-4u.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.dafont.com/">DaFont</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://eggramen.neocities.org/code/css_testpages">eggramen.neocities.org</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://loading.io/animation/text/#">loading.io</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://loveberry.nekoweb.org/">loveberry.nekoweb.org</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://petrapixel.neocities.org/coding/layout-generator">petrapixel.neocities.org</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://pixel-soup.tumblr.com/">pixel-soup.tumblr.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://pixel-utopia.tumblr.com/page/7">pixel-utopia.tumblr.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://sadgrl.online/">sadgrl.online</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://sadgrlonline.github.io/html-cheatsheet/">sadgrlonline html-cheatsheet</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.scmplayer.net/#skin=https://static.tumblr.com/ab5t6n9/xvrn5ivgg/hellokitty2.css">scmplayer.net</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://seamless-patterns.tumblr.com/page/2">seamless-patterns.tumblr.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://teddybear-halo.neocities.org/links#resources">teddybear-halo.neocities</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://codesharing.neocities.org/directory/layouts">tentacool's directory</a></li>
-   <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://gifcities.org/?q=wizard">Gifcities</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.glitter-graphics.com/gallery.php?categoryID=65&page=2">glitter-graphics.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://photomosh.com/">photomosh.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.transparenttextures.com/">transparenttextures.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://tenshiikisu.tumblr.com/post/79015021080/heres-my-collection-of-pixel-backgrounds-tile">tenshiikisu.tumblr.com</a></li>
-     <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-    
-    <li><a href="https://www.w3schools.com/howto/default.asp">w3schools.com</a></li>
-    <img src="https://64.media.tumblr.com/f8585877d7af902bb9010cd52e3c31e9/tumblr_p58uugid3I1ve087jo5_400.gifv" alt="desc">
-          </div>
+    </div>
           <div id="Fifth" class="tabcontent">
           </div>
           <div id="Sixth" class="tabcontent">
             <div class="videogame">
+        				<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
         		<div id="flashcontainer">
-    <iframe src="https://archive.org/embed/bunnibunni" width="620" height="750" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <embed id="flash-game" src="/LandOfBunnies.swf" width="520" height="450">
 </div>
-                
-Please wait...
+RuffleFlashplayer is required
             </div>
-          </div>
-          <div class="insidebox2">
-            <div class="tiny-calendar" id="calendar"></div>
-            <div class="clock" id="clock">00:00:00</div>
-            <div class="list">
-<div id="updates"><h1>Updates</h1>
-</div>
-              <ul>
-                <li>Added bgs</li>
-                <li>Added header</li>
-                <li>Added pfp</li>
-                <li>Added clock</li>
-                <li>Added buttons</li>
-                <li>Added poll</li>
-            </div>
-              <div id="polls">
-              <form method="post" action="https://poll.pollcode.com/36571618"><div style="background-color:#FFDBF4;padding:2px;height:140px;width:196px;font-family:Comic Sans MS;font-size:small;color:#AB2772;"><div style="padding:2px 0px 4px 2px;"><strong>Which kawaii character do you like?</strong></div><div align="center" style="padding-bottom:5px;"><select name="answer"><option value="1">Pusheen</option><option value="2">Hello Kitty</option><option value="3">Cinnamoroll</option><option value="4">My Melody</option><option value="5">Kuromi</option><option value="6">Chococat</option><option value="7">Little Twin Stars</option><option value="8">Snoopy</option></select></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote "> <input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px;">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
-              </div>
-            </div>
-      </div>
-          </main>
-        <footer>meow</footer>
-      </div>
-            </div>
-              <script>
-                  function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+      </main>
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+      <!-- =============================================== -->
+      <!-- FOOTER -->
+      <!-- =============================================== -->
 
-    // Check if the cityName element exists before modifying it
-    const cityElement = document.getElementById(cityName);
-    if (cityElement) {
-        cityElement.style.display = "block";
-        evt.currentTarget.className += " active";
-    } else {
-        console.error(`Element with id "${cityName}" not found.`);
-    }
-}
-  const defaultTab = document.getElementById("defaultOpen");
-if (defaultTab) {
-    defaultTab.click();
-} else {
-    console.error('Default tab element with id "defaultOpen" not found.');
-}
+      <footer>
+            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+      </footer>
   
-              </script><script>
-  
-  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }
-  
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    applyTheme(savedTheme);
-  } else {
-    applyTheme(userPrefersDark ? 'dark' : 'light');
-  }
-  
-  document.getElementById('theme-toggle').addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(newTheme);
-  });
-              </script>
-  <script>
-  function updateClock() {
-              let now = new Date();
-              let hours = String(now.getHours()).padStart(2, '0');
-              let minutes = String(now.getMinutes()).padStart(2, '0');
-              let seconds = String(now.getSeconds()).padStart(2, '0');
-  
-              let timeString = `${hours}:${minutes}:${seconds}`;
-              document.getElementById("clock").textContent = timeString;
-          }
-  
-          setInterval(updateClock, 1000);
-          updateClock(); // Run immediately on load
-                  
-              </script><script>
-  
-  function generateTinyCalendar() {
-              const today = new Date();
-              const currentMonth = today.getMonth();
-              const currentYear = today.getFullYear();
-  
-              const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-              const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-  
-              let calendarHTML = `<h3>${monthNames[currentMonth]} ${currentYear}</h3>`;
-              calendarHTML += '<div class="days">';
-  
-              for (let day = 1; day <= daysInMonth; day++) {
-                  const isToday = (day === today.getDate()) ? "today" : "";
-                  calendarHTML += `<div class="day ${isToday}">${day}</div>`;
-              }
-  
-              calendarHTML += '</div>';
-              document.getElementById("calendar").innerHTML = calendarHTML;
-          }
-  
-          generateTinyCalendar();
-              </script>
+    <!-- Closing .layout: -->
+    </div>
+
+
+    <!-- Add any additional Javascript code (<script></script>) here. -->
   </body>
 </html>
