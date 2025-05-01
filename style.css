@@ -541,7 +541,7 @@ main h6 {
   background-image:url('');
   background-size:250px;
   background-repeat:no-repeat;
-  border-style:dark green;
+  border-style:green 1px;
   background-color:white;
   float:left;
   margin-top:12px;
